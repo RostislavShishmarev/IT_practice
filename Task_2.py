@@ -12,9 +12,15 @@ def sort(list_, column_index=0):
 
 
 with open('students.csv') as file:
-    data = [row.split(',')
-            for row in file.read().split('\n')
-            if row and row.split(',')[4].isdigit()]
+    data = [
+        row.split(',')
+        for row in file.read().split('\n')
+        if row and row.split(
+            ',',
+        )[4].isdigit() and row.split(
+            ',',
+        )[3].startswith('10')
+    ]
 
 sorted_data = sort(data, 4)
 
