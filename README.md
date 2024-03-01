@@ -10,14 +10,17 @@
 
 #### [Использование проекта](#use_project)
 
+<span name="download_project"></span>
 
-### Установка проекта <span name="download_project"></span>
+### Установка проекта
 
 ```commandline
 git clone https://github.com/RostislavShishmarev/IT_practice_1.git
 ```
 
-### Запуск проекта <span name="run_project"></span>
+<span name="run_project"></span>
+
+### Запуск проекта
 
 Linux:
 ```commandline
@@ -29,7 +32,9 @@ Windows:
 python [code filename]
 ```
 
-### Использование проекта <span name="use_project"></span>
+<span name="use_project"></span>
+
+### Использование проекта
 
 ##### `Task_1.py`
 Выводит оценку и номер проекта ученика Хадарова Владимира, заменяет в таблице оценки None на среднее арифметическое оценок и сохраняет в файл `student_new.csv`
