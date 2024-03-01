@@ -1,4 +1,11 @@
 def sort(list_, column_index=0):
+    '''
+    Function for insertion sort by the element on column_index of each row in
+    list_
+    :param list_: list of rows to sort
+    :param column_index: index of column for compare
+    :return: sorted list
+    '''
     def f(element):  # function to get sort parameter
         return int(element[column_index])
 

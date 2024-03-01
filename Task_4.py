@@ -5,11 +5,21 @@ import string
 
 
 def generate_login(row):
+    '''
+    Function to generate login based on pupil name
+    :param row: row of csv table
+    :return: login of pupil
+    '''
     fam, name, father = row[1].split()
     return f'{fam}_{name[0]}{father[0]}'
 
 
-def generate_password(already_used):  # already_used - already used passwords
+def generate_password(already_used):
+    '''
+    Function to generate password
+    :param already_used: already used passwords
+    :return: random password (8 chars)
+    '''
     password = ''
     while not password or password in already_used:
         password_list = []

@@ -4,6 +4,11 @@ P, M = 67, 10 ** 9 + 9
 
 
 def generate_hash(row):
+    '''
+    Function to generate hash based on pupil name
+    :param row: row of csv table
+    :return: int hash
+    '''
     hash_ = 0
     name = ''.join(row[1].split())
     for i, char in enumerate(name):

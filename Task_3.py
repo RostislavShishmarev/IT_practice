@@ -3,6 +3,11 @@ with open('students.csv') as file:
 
 
 def get_pupil(project_id):
+    '''
+    Function to get information about project by id
+    :param project_id: id of project
+    :return: text information
+    '''
     res = 'Ничего не найдено.'
     for row in data[1:]:
         if int(row[2]) == project_id:
